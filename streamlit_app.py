@@ -582,7 +582,7 @@ else:
         if uploaded_file is not None:
             st.session_state.selected_image = uploaded_file
             image = Image.open(uploaded_file)
-            st.image(image, use_container_width=True, caption="Selected X-Ray Image")
+            st.image(image, use_column_width=True, caption="Selected X-Ray Image")
         else:
             st.markdown("""
                 <div style="border: 2px dashed rgba(255, 255, 255, 0.3); border-radius: 16px; 
